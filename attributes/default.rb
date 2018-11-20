@@ -1,7 +1,5 @@
-node.default['erlang']['install_method'] = "esl"
-node.default['rabbitmq']['version'] = "3.7.3"
-node.default['rabbitmq']['default_user'] = 'guest'
-node.default['rabbitmq']['default_pass'] = 'guest'
-node.default['rabbitmq']['loopback_users'] = nil
-node.default['rabbitmq']['management']['load_definitions'] = true
-node.default['rabbitmq']['enabled_plugins']
+default['erlang']['install_method'] = "esl"
+default['rabbitmq']['version'] = "3.7.3"
+default['rabbitmq']['default_user'] = 'guest'
+default['rabbitmq']['default_pass'] = 'guest'
+sdefault['rabbitmq']['loopback_users'] = nil
