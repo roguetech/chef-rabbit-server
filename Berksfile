@@ -1,3 +1,3 @@
-source 'http://nexus.service:8081'
+source 'https://supermarket.chef.io'
 
 metadata
