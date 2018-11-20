@@ -1,0 +1,6 @@
+# Kitchen test
+.kitchen
+*.lock
+Berksfile.lock
+cookbooks
+target

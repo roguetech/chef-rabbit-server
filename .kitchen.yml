@@ -1,0 +1,31 @@
+---
+driver:
+  name: dokken
+  chef_version: 12.21.3
+  privileged: true
+  hostname: kitchen.rxpdev.auto
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+- name: centos-7
+  driver:
+    image: artifactory.rxpdev.com/pipeline/rxp_pipeline_centos
+    platform: rhel
+    pid_one_command: /usr/lib/systemd/systemd
+    intermediate_instructions:
+      - RUN yum clean all
+      - RUN yum -y install lsof which net-tools iproute
+
+suites:
+- name: default
+  run_list:
+   - recipe[rxp-empty-cookbook::default]
+  includes: ["centos-7"]

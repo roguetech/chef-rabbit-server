@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+      <groupId>com.rxp</groupId>
+      <artifactId>rxp-chef-parent</artifactId>
+      <version>1.0.0-RELEASE</version>
+    </parent>
+
+    <groupId>com.rxp.chef</groupId>
+    <artifactId>rxp-rabbit-server</artifactId>
+    <version>1.0.0-RELEASE</version>
+    <name>RXP Rabbit Server Cookbook</name>
+    <packaging>pom</packaging>
+    <description>RXP Rabbit Server Cookbook</description>
+
+    <properties>
+      <rxp.skip.parent>false</rxp.skip.parent>
+    </properties>
+
+    <distributionManagement>
+      <repository>
+        <id>central</id>
+        <name>rxpdevartifactory-releases</name>
+        <url>https://artifactory.rxpdev.com:443/artifactory/chef-releases</url>
+      </repository>
+    </distributionManagement>
+
+</project>

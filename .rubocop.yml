@@ -1,0 +1,52 @@
+AllCops:
+  Exclude:
+    - 'berks-cookbooks/**/*'
+    - 'cookbooks/**/*'
+AlignParameters:
+  Enabled: true
+ClassLength:
+  Enabled: true
+CyclomaticComplexity:
+  Enabled: true
+Documentation:
+  Enabled: true
+Encoding:
+  Enabled: true
+Style/FileName:
+  Enabled: true
+LineLength:
+  Enabled: true
+  Max: 120
+MethodLength:
+  Enabled: true
+  Max: 60
+Metrics/AbcSize:
+  Enabled: true
+PerceivedComplexity:
+  Enabled: true
+Style/SpaceBeforeFirstArg:
+  Enabled: true
+Style/ClassAndModuleChildren:
+  Enabled: true
+Style/GuardClause:
+  Enabled: true
+Style/PercentLiteralDelimiters:
+  Enabled: true
+Style/ModuleFunction:
+  Enabled: true
+Style/AlignHash:
+  Enabled: true
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+AbcSize:
+  Max: 60
+
+BlockLength:
+  Max: 130
+
+Style/Tab:
+  Enabled: true
+
+Style/IndentationWidth:
+  Enabled: true
