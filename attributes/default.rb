@@ -5,3 +5,6 @@ default['rabbitmq']['default_pass'] = 'guest'
 default['rabbitmq']['loopback_users'] = nil
 default['rabbitmq']['user'] = 'admin'
 default['rabbitmq']['pass'] = 'admin'
+
+# Plugins
+default['rabbitmq']['enabled_plugins'] = ['rabbitmq_management_visualiser','rabbitmq_test']
