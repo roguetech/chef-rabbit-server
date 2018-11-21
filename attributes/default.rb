@@ -12,7 +12,7 @@ default['rabbitmq']['enabled_users'] = [
   {
     :name => 'administrator',
     :password => 'admin',
-    :tag => 'administrators',
+    :tag => 'administrator',
     :rights => [
       {
         :vhost => '/',
