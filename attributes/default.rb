@@ -7,4 +7,21 @@ default['rabbitmq']['user'] = 'admin'
 default['rabbitmq']['pass'] = 'admin'
 
 # Plugins
-default['rabbitmq']['enabled_plugins'] = ['rabbitmq_management_visualiser','rabbitmq_test']
+default['rabbitmq']['enabled_plugins'] = ['rabbitmq_management_visualiser','rabbitmq_test','amqp_client','cowboy','eldap','mochiweb','sockjs','webmachine']
+
+# Create users
+default['rabbitmq']['enable_users'] = [
+  {
+    :name => 'administrator',
+    :password => 'admin',
+    :tag => 'administrators',
+    :rights => [
+      {
+        :vhost => '/',
+        :conf => '.*',
+        :write => '.*',
+        :read => '.*'
+      }
+    ]
+  }
+]
